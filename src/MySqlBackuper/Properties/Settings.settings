@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Kesoft.MySqlBackuper.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DataSource" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">localhost</Value>
+    </Setting>
+    <Setting Name="Database" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">csm-v4</Value>
+    </Setting>
+    <Setting Name="UserId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">root</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">fhit</Value>
+    </Setting>
+    <Setting Name="IntervalHours" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">24</Value>
+    </Setting>
+    <Setting Name="BackupPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\ProgramData\database\</Value>
+    </Setting>
+    <Setting Name="Tables" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">users,satellites</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
