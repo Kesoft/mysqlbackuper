@@ -4,7 +4,7 @@
 #define MyAppName "MySQL Backuper"
 #define MyAppVersion "1.0.0.0"
 #define MyAppPublisher "Kesoft"
-#define MyAppExeName "CsmDbAutoBackup.exe"
+#define MyAppExeName "mysqlbackuper.exe"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -30,11 +30,13 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: checkablealone
 
 [Files]
-Source: "src\mysqlbackuper\bin\release\*"; Excludes: "*.pdb,\logs\*,*.xml"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "src\mysqlbackuper\bin\release\*"; Excludes: "*.pdb,\logs\*,*.xml,*.exe.config"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
-;Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
+Name: "{group}\{#MyAppName}\Install and Start"; Filename: "{app}\InstallAndStart.bat"
+Name: "{group}\{#MyAppName}\Stop and Uninstall"; Filename: "{app}\StopAndUninstall.bat"
+Name: "{group}\{#MyAppName}\MySQL Backuper"; Filename: "{app}\{#MyAppExeName}"
 ;Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 
 ;以下是是否允许安装完成后直接运行程序
